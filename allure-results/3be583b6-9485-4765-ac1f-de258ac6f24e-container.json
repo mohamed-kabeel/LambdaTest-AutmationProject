@@ -1,0 +1,1 @@
+{"uuid":"3be583b6-9485-4765-ac1f-de258ac6f24e","name":"tests.SingUpTests.tearDown","children":["6ed84bf1-99c2-4111-b007-c6e3a21b9aa1"],"description":"","befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1744673113972,"stop":1744673114426}],"start":1744673113972,"stop":1744673114426}

@@ -1,0 +1,14 @@
+{
+  "validLogin": {
+    "email": "1111@yahoo.com",
+    "password": "123456"
+  },
+  "invalidEmail": {
+    "email": "aa@",
+    "password": "24"
+  },
+  "invalidPassword": {
+    "email": "1111@yahoo.com",
+    "password": "123"
+  }
+}

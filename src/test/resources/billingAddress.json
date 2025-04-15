@@ -1,0 +1,46 @@
+{
+    "validData1": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "company": "Tech Corp",
+      "address1": "123 Main St",
+      "address2": "Apt 4B",
+      "city": "New York",
+      "postcode": "10001",
+      "country": 4,
+      "state": 3
+    },
+    "validData2": {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "company": "Innovate Ltd",
+      "address1": "456 Elm St",
+      "address2": "Suite 300",
+      "city": "Los Angeles",
+      "postcode": "90012",
+      "country": 4,
+      "state": 3
+    },
+    "invalidData1": {
+      "firstName": "",
+      "lastName": "",
+      "company": "",
+      "address1": "",
+      "address2": "",
+      "city": "",
+      "postcode": "",
+      "country": 4,
+      "state": 4
+    },
+    "invalidData2": {
+      "firstName": "@#$$",
+      "lastName": "1234",
+      "company": "!@#$%^",
+      "address1": "**Invalid Address**",
+      "address2": "",
+      "city": "!!@#",
+      "postcode": "00000",
+      "country": 3,
+      "state": 3
+    }
+}

@@ -1,0 +1,20 @@
+[INFO] 15-04-2025 01:23:10 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: false
+[INFO] 15-04-2025 01:23:11 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: false
+[INFO] 15-04-2025 01:23:11 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: false
+[INFO] 15-04-2025 01:23:12 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: false
+[INFO] 15-04-2025 01:23:12 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: false
+[INFO] 15-04-2025 01:23:59 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: false
+[INFO] 15-04-2025 01:23:59 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: false
+[INFO] 15-04-2025 01:23:59 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: false
+[INFO] 15-04-2025 01:23:59 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: false
+[INFO] 15-04-2025 01:23:59 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: false
+[INFO] 15-04-2025 01:24:45 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: false
+[INFO] 15-04-2025 01:24:45 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: false
+[INFO] 15-04-2025 01:24:45 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: false
+[INFO] 15-04-2025 01:24:45 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: false
+[INFO] 15-04-2025 01:24:45 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: false
+[INFO] 15-04-2025 01:25:13 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: true
+[INFO] 15-04-2025 01:25:13 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: true
+[INFO] 15-04-2025 01:25:13 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: true
+[INFO] 15-04-2025 01:25:13 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: true
+[INFO] 15-04-2025 01:25:13 [TestNG-test-Test Group 1-1] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: true

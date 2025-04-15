@@ -1,0 +1,1 @@
+{"uuid":"88234cdb-79ff-42c1-a354-8d7f9ca1a590","name":"tests.SingUpTests.setup","children":["fe9fc671-2b43-4428-b80b-967a16a1f7e7"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1744672946599,"stop":1744672960271}],"afters":[],"start":1744672946599,"stop":1744672960274}

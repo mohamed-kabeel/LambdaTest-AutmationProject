@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Ecommerce Suite">
+
+    <test name="Test Group 1" parallel="classes" thread-count="5">
+        <classes>
+            <class name="tests.SingUpTests" />
+            <class name="tests.AddressTests" />
+            <class name="tests.BlogTests" />
+            <class name="tests.CheckoutTests" />
+            <class name="tests.LoginTest" />
+        </classes>
+    </test>
+
+    <test name="Test Group 2" parallel="classes" thread-count="5">
+        <classes>
+            <class name="tests.PasswordTests" />
+            <class name="tests.ShoppingCartTests" />
+            <class name="tests.WishlistTests" />
+            <class name="tests.HomePageTests" />
+            <class name="tests.SeachTests" />
+        </classes>
+    </test>
+</suite>
