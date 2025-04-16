@@ -130,5 +130,33 @@
             <version>0.7.7.0</version>
         </dependency>
     </dependencies>
+    <profiles>
+        <profile>
+            <id>sequential</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <property>
+                    <name>environment</name>
+                    <value>sequential</value>
+                </property>
+            </activation>
+            <properties>
+                <testNGSuite>src/testRunner/sequential.xml</testNGSuite>
+            </properties>
+        </profile>
+        <profile>
+            <id>parallel</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <property>
+                    <name>environment</name>
+                    <value>parallel</value>
+                </property>
+            </activation>
+            <properties>
+                <testNGSuite>src/testRunner/parallel.xml</testNGSuite>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>
