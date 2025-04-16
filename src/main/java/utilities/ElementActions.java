@@ -7,12 +7,14 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
+import static utilities.ElementUtils.scrollElement;
+
 public class ElementActions {
 
     public static void enterText(WebDriver driver, By locator, String s) {
         WaitUtils.fluentWait(driver, locator, 10000)
                 .until(x -> ElementUtils.checkElementVisibility(driver, locator));
-        ElementUtils.scrollElement(driver, locator);
+        scrollElement(driver, locator);
         driver.findElement(locator).sendKeys(s);
     }
 
@@ -30,7 +32,7 @@ public class ElementActions {
     public static void selectDropListElement(WebDriver driver, By locator, int index) {
         WaitUtils.fluentWait(driver, locator, 10000)
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
-        ElementUtils.scrollElement(driver, locator);
+        scrollElement(driver, locator);
         new Select(driver.findElement(locator)).selectByIndex(index);
     }
 
@@ -41,7 +43,7 @@ public class ElementActions {
     public static void clearText(WebDriver driver, By locator) {
         WaitUtils.fluentWait(driver, locator, 10000)
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
-        ElementUtils.scrollElement(driver, locator);
+        scrollElement(driver, locator);
         driver.findElement(locator).clear();
     }
 

@@ -22,7 +22,7 @@ public class ElementUtils {
     }
 
     public static void hover(WebDriver driver, By locator) {
-        WaitUtils.fluentWait(driver, locator, 3000)
+        WaitUtils.fluentWait(driver, locator, 6000)
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         new Actions(driver).moveToElement(driver.findElement(locator)).perform();
     }

@@ -8,6 +8,7 @@ import org.testng.asserts.SoftAssert;
 import static utilities.ElementActions.*;
 
 public class SpecificBlogPage extends BasePage<SpecificBlogPage> {
+    By blogName = By.cssSelector("[class=\"entry-content content-title \"] h1");
     By name = By.cssSelector("#entry_210911 #input-name");
     By email = By.cssSelector("#entry_210911 #input-email");
     By comment = By.cssSelector("#entry_210911 #input-comment");
@@ -16,8 +17,12 @@ public class SpecificBlogPage extends BasePage<SpecificBlogPage> {
     By emailError = By.xpath("//*[@id = \"input-email\"]/..//*[@class=\"invalid-feedback\"]");
     By commentError = By.xpath("//*[@id = \"input-comment\"]/..//*[@class=\"invalid-feedback\"]");
     By successfullAlert = By.cssSelector("[class=\"alert alert-success alert-dismissible\"]");
+
     public SpecificBlogPage(WebDriver driver) {
         super(driver);
+    }
+    public String getBlogName(){
+        return getDataFromElement(driver,blogName);
     }
     public SpecificBlogPage enterName(String s){
         enterText(driver,name,s);

@@ -5,6 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import static utilities.ElementActions.clickButton;
+import static utilities.ElementActions.getDataFromElement;
+import static utilities.ElementUtils.hover;
+
 public class HomePage extends BasePage<HomePage> {
     String trandingcatogroyName = "Desktops";
     By trandingCategory = By.xpath("//*[@id=\"mz-category-wall74217970\"]//*[contains(text(),\""+trandingcatogroyName+"\")]/../..");
@@ -24,11 +27,11 @@ public class HomePage extends BasePage<HomePage> {
     By collComporareBtn ;
     By collProduct ;
     int BlogNum;
-    By BlogAuthor = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .author");
-    By blogcomment = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .comment");
-    By blogViewed = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .viewed");
-    By blogTimespamed = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .timestamp");
-    By blogNameAndLink = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .title a");
+    By BlogAuthor = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .author");
+    By blogcomment = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .comment");
+    By blogViewed = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .viewed");
+    By blogTimespamed = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .timestamp");
+    By blogNameAndLink = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .title a");
 
     void setTopProduct(String s){
         this.topProductName = s;
@@ -48,11 +51,11 @@ public class HomePage extends BasePage<HomePage> {
     }
    public void setBlog(int i){
         this.BlogNum = i;
-        BlogAuthor = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .author");
-        blogcomment = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .comment");
-        blogViewed = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .viewed");
-        blogTimespamed = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .timestamp");
-        blogNameAndLink = By.xpath("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .title a");
+        BlogAuthor = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .author");
+        blogcomment = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .comment");
+        blogViewed = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .viewed");
+        blogTimespamed = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .timestamp");
+        blogNameAndLink = By.cssSelector("div[aria-label=\""+ BlogNum+" / 10\"] div[class =\"article-thumb image-top\"] .title a");
     }
     public void setTrandingCategory(String s){
         this.trandingcatogroyName = s;
@@ -65,9 +68,11 @@ public class HomePage extends BasePage<HomePage> {
     }
     
     @Step("Add '{s}' product to cart from top products section")
-    public void clickTopAdd(String s){
+    public HomePage clickTopAdd(String s)  {
         setTopProduct(s);
+        System.out.println(topAddToCartBtn);
         clickButton(driver,topAddToCartBtn);
+        return this;
     }
     
     @Step("View details of '{s}' product from top products section")
@@ -96,9 +101,11 @@ public class HomePage extends BasePage<HomePage> {
     }
     
     @Step("Add '{s}' product to cart from collection section")
-    public void clickCollAdd(String s){
+    public HomePage clickCollAdd(String s){
         setCollProduct(s);
+        System.out.println(collAddToCartBtn);
         clickButton(driver,collAddToCartBtn);
+        return this;
     }
     
     @Step("View details of '{s}' product from collection section")
@@ -149,11 +156,26 @@ public class HomePage extends BasePage<HomePage> {
         setBlog(i);
         clickButton(driver,blogTimespamed);
     }
+    public String getBlogName(int i ){
+        setBlog(i);
+        return getDataFromElement(driver,blogNameAndLink);
+    }
     
     @Step("Click on blog name and link of blog number {i}")
     public void clickBlogNameAndLink(int i){
         setBlog(i);
         clickButton(driver,blogNameAndLink);
+    }
+    public HomePage hoverTopProduct(String name){
+        setTopProduct(name);
+        hover(driver,topProduct);
+        return this;
+    }
+    public HomePage hoverCollectionProduct(String name){
+        setCollProduct(name);
+
+        hover(driver,collProduct);
+        return this;
     }
     public HomePage(WebDriver driver) {
         super(driver);
