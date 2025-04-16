@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Ecommerce Suite">
 
-    <test name="test" parallel="classes" thread-count="5">
+    <test name="test">
         <classes>
             <class name="tests.SingUpTests" />
             <class name="tests.AddressTests" />
