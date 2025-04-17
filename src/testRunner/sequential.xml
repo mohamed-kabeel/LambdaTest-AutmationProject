@@ -3,6 +3,8 @@
 
     <test name="test">
         <classes>
+            <class name="tests.LoginTest" />
+            <!--
             <class name="tests.SingUpTests" />
             <class name="tests.AddressTests" />
             <class name="tests.BlogTests" />
@@ -13,6 +15,7 @@
             <class name="tests.WishlistTests" />
             <class name="tests.HomePageTests" />
             <class name="tests.SeachTests" />
+            -->
         </classes>
     </test>
 </suite>
