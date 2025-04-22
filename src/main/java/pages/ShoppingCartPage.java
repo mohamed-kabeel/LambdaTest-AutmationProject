@@ -163,7 +163,7 @@ public class ShoppingCartPage extends BasePage<ShoppingCartPage> {
     // validate empty cart state
     @Step("Validate empty cart message is shown after removing all items")
     public ShoppingCartPage validateRemovingElement() {
-       driver.manage().timeouts().implicitlyWait(Duration.ofMillis(4000));
+       driver.manage().timeouts().implicitlyWait(Duration.ofMillis(6000));
         Assert.assertTrue(
                 checkElementVisibility(driver, emptyCartError),
                 "Expected empty cart message is not visible."

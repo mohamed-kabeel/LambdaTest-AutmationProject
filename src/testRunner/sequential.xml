@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Ecommerce Suite">
-
+    <listeners>
+        <listener class-name="listener.SuiteListener"/>
+        <listener class-name="listener.IInvokedMethodListener"/>
+    </listeners>
     <test name="test">
         <classes>
             <class name="tests.LoginTest" />
-            <!--
             <class name="tests.SingUpTests" />
             <class name="tests.AddressTests" />
             <class name="tests.BlogTests" />
@@ -15,7 +17,8 @@
             <class name="tests.WishlistTests" />
             <class name="tests.HomePageTests" />
             <class name="tests.SeachTests" />
-            -->
+            <class name = "tests.ProductTests"/>
+
         </classes>
     </test>
 </suite>

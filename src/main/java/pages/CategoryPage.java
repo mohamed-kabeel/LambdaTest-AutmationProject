@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 import static utilities.ElementActions.*;
 import static utilities.ElementUtils.hover;
+import static utilities.WaitUtils.fluentWait;
 
 
 public class CategoryPage extends BasePage<CategoryPage> {
@@ -64,6 +65,10 @@ public class CategoryPage extends BasePage<CategoryPage> {
     By componentCategoryBtn = By.xpath("//figcaption[contains(text()," + componentName + ")]/ancestor::a");
     By invalidProductSearch = By.xpath("//*[@class=\"buttons clearfix mb-3\"]/.. //p");
 
+    By inStockAailbilty = By.xpath("//*[@id = \"mz-fss-0--1\"]/..");
+
+    private By brand = By.xpath("(//*[contains(text(),\"Brand\")]/ancestor::li//a)");
+    private By availability = By.xpath("(//*[contains(text(),\"Availability\")]/ancestor::li//span)[2]");
 
     public CategoryPage(WebDriver driver) {
         super(driver);
@@ -130,7 +135,7 @@ public class CategoryPage extends BasePage<CategoryPage> {
     @Step("Entering minimum price: {0}")
     public CategoryPage enterMinPrice(String s) {
         clearText(driver, minPrice);
-        enterText(driver, minPrice, s);
+        enterTextAndEnter(driver, minPrice, s);
         return this;
     }
 
@@ -140,9 +145,10 @@ public class CategoryPage extends BasePage<CategoryPage> {
     }
 
     @Step("Entering maximum price: {0}")
-    public CategoryPage enterMaxPrice(String s) {
+    public CategoryPage enterMaxPrice(String s)  {
         clearText(driver, maxPrice);
-        enterText(driver, maxPrice, s);
+        enterTextAndEnter(driver, maxPrice, s);
+
         return this;
     }
 
@@ -205,7 +211,11 @@ public class CategoryPage extends BasePage<CategoryPage> {
         clickButton(driver, rating);
         return new CategoryPage(driver);
     }
-
+    @Step("click in stock availabilty")
+    public CategoryPage clickinStock(){
+        clickButton(driver,inStockAailbilty);
+        return this;
+    }
     @Step("Clicking the category: {0}")
     public CategoryPage clickCategory(String s) {
         setCatogyName(s);
@@ -217,7 +227,7 @@ public class CategoryPage extends BasePage<CategoryPage> {
         public CategoryPage clickAddToCartBtn(String s) {
             setProductName(s);
             hover(driver, product);
-            clickButton(driver, addToCartBtn);
+            clickButtonWithoutScroll(driver, addToCartBtn);
             return this;
         }
     
@@ -225,7 +235,7 @@ public class CategoryPage extends BasePage<CategoryPage> {
         public CategoryPage clickViewProductBtn(String s) {
             setProductName(s);
             hover(driver, product);
-            clickButton(driver, viewProductBtn);
+            clickButtonWithoutScroll(driver, viewProductBtn);
             return this;
         }
     
@@ -234,7 +244,7 @@ public class CategoryPage extends BasePage<CategoryPage> {
         driver.navigate().refresh();
             setProductName(s);
             hover(driver, product);
-            clickButton(driver, addToWishListBtn);
+            clickButtonWithoutScroll(driver, addToWishListBtn);
             System.out.println(addToWishListBtn.toString());
             return this;
         }
@@ -243,7 +253,7 @@ public class CategoryPage extends BasePage<CategoryPage> {
         public CategoryPage clickComporareBtn(String s) {
             setProductName(s);
             hover(driver, product);
-            clickButton(driver, comporareBtn);
+            clickButtonWithoutScroll(driver, comporareBtn);
             return this;
         }
     
@@ -285,15 +295,35 @@ public class CategoryPage extends BasePage<CategoryPage> {
             setComponentName(s);
             clickButton(driver, componentCategoryBtn);
         }
-    
 
 
+    @Step("Get the Brand of the product")
+    public List<String> getBrand() {
+        List<WebElement> list = findElements(driver,brand);
+        List<String> brands = new ArrayList<>();
+
+        for (WebElement element : list) {
+            brands.add(element.getText());
+        }
+        return brands;
+    }
+
+
+    @Step("Get the availability status of the product")
+    public List<String> getAvailabilities() {
+       fluentWait(driver,availability,20000).until(ExpectedConditions.elementToBeClickable(availability));
+        List<WebElement> list = findElements(driver,availability);
+        List<String> availabilities = new ArrayList<>();
+
+        for (WebElement element : list) {
+            availabilities.add(element.getText());
+        }
+        return availabilities;
+    }
     
         @Step("Getting the names of all products")
         public List<String> getProductsName() {
-            driver.navigate().refresh();
-    
-            List<WebElement> list = driver.findElements(name);
+            List<WebElement> list = findElements(driver,name);
             List<String> names = new ArrayList<>();
     
             for (WebElement element : list) {
@@ -304,7 +334,7 @@ public class CategoryPage extends BasePage<CategoryPage> {
 
         @Step("Getting the prices of all products")
         public List<Integer> getProductsPrice() {
-            List<WebElement> list = driver.findElements(price);
+            List<WebElement> list = findElements(driver,price);
             List<Integer> prices = new ArrayList<>();
             for (WebElement element : list) {
                 String stringNumber = element.getText().replace("$", "");

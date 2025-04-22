@@ -1,6 +1,8 @@
 package tests;
 
 import driver.DriverManger;
+import listener.IInvokedMethodListener;
+import listener.SuiteListener;
 import org.apache.commons.exec.ShutdownHookProcessDestroyer;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeTest;
@@ -21,17 +23,19 @@ import utilities.VideoUtils;
 
 @Epic("E-Commerce")
 @Feature("Shopping Cart Management")
+@Listeners({SuiteListener.class, IInvokedMethodListener.class})
+
 public class ShoppingCartTests {
     ScreenRecorderUtils.ScreenRecorder recorder;
 
     WebDriver driver;
     ShoppingCartPage cartPage;
-    @BeforeSuite
+    /*@BeforeSuite
     public void cleanAllures(){
         cleanAllureResults();
         cleanFolderContents("test-outputs/screen-records");
 
-    }
+    }*/
     @BeforeClass
     @Step("Setup WebDriver and perform login with adding product to cart")
     public void setup() throws Exception {
@@ -46,6 +50,7 @@ public class ShoppingCartTests {
     }
     @BeforeMethod
     public void setupMethod(){
+        driver.get("https://ecommerce-playground.lambdatest.io/");
         new HomePage(driver)
                 .clickHomeBtn()
                 .clickTopProduct("HTC Touch HD")

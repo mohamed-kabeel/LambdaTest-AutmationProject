@@ -4,8 +4,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static utilities.ElementActions.clickButton;
-import static utilities.ElementActions.getDataFromElement;
+import static utilities.ElementActions.*;
 import static utilities.ElementUtils.hover;
 
 public class HomePage extends BasePage<HomePage> {
@@ -71,26 +70,26 @@ public class HomePage extends BasePage<HomePage> {
     public HomePage clickTopAdd(String s)  {
         setTopProduct(s);
         System.out.println(topAddToCartBtn);
-        clickButton(driver,topAddToCartBtn);
+        clickButtonWithoutScroll(driver,topAddToCartBtn);
         return this;
     }
     
     @Step("View details of '{s}' product from top products section")
     public void clickTopView(String s){
         setTopProduct(s);
-        clickButton(driver,topViewProductBtn);
+        clickButtonWithoutScroll(driver,topViewProductBtn);
     }
     
     @Step("Add '{s}' product to wishlist from top products section")
     public void clickTopWishList(String s){
         setTopProduct(s);
-        clickButton(driver,topAddToWishListBtn);
+        clickButtonWithoutScroll(driver,topAddToWishListBtn);
     }
     
     @Step("Compare '{s}' product from top products section")
     public void clickTopCompare(String s){
         setTopProduct(s);
-        clickButton(driver,topComporareBtn);
+        clickButtonWithoutScroll(driver,topComporareBtn);
     }
     
     @Step("Click on '{s}' product from top products section")
@@ -103,32 +102,37 @@ public class HomePage extends BasePage<HomePage> {
     @Step("Add '{s}' product to cart from collection section")
     public HomePage clickCollAdd(String s){
         setCollProduct(s);
+        hover(driver,collProduct);
         System.out.println(collAddToCartBtn);
-        clickButton(driver,collAddToCartBtn);
+        clickButtonWithoutScroll(driver,collAddToCartBtn);
         return this;
     }
     
     @Step("View details of '{s}' product from collection section")
     public void clickCollView(String s){
         setCollProduct(s);
-        clickButton(driver,collViewProductBtn);
+        hover(driver,collProduct);
+        clickButtonWithoutScroll(driver,collViewProductBtn);
     }
     
     @Step("Add '{s}' product to wishlist from collection section")
     public void clickCollWishList(String s){
         setCollProduct(s);
-        clickButton(driver,collAddToWishListBtn);
+        hover(driver,collProduct);
+        clickButtonWithoutScroll(driver,collAddToWishListBtn);
     }
     
     @Step("Compare '{s}' product from collection section")
     public void clickCollCompare(String s){
         setCollProduct(s);
-        clickButton(driver,collComporareBtn);
+        hover(driver,collProduct);
+        clickButtonWithoutScroll(driver,collComporareBtn);
     }
     
     @Step("Click on '{s}' product from collection section")
     public SpecificProductPage clickCollProduct(String s){
         setCollProduct(s);
+        hover(driver,collProduct);
         clickButton(driver,collProduct);
         return new SpecificProductPage(driver);
     }

@@ -3,10 +3,12 @@ package pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
 import static utilities.ElementActions.*;
 import static utilities.ElementUtils.checkElementVisibility;
+import static utilities.WaitUtils.fluentWait;
 
 public class SpecificProductPage extends BasePage<SpecificProductPage> {
     private By brand = By.xpath("(//*[contains(text(),\"Brand\")]/ancestor::li//a)");
@@ -19,13 +21,13 @@ public class SpecificProductPage extends BasePage<SpecificProductPage> {
     private By compareBtn = By.cssSelector("#entry_216844 button");
     private By reviewName = By.id("input-name");
     private By reviewText = By.id("input-review");
-    private By writeReviewBtn = By.cssSelector("button-review");
+    private By writeReviewBtn = By.cssSelector("#button-review");
     private By reviewRating = By.cssSelector("label[for=\"rating-5-216860\"]");
+    private By successReview = By.cssSelector("[class = \"alert alert-success alert-dismissible\"]");
     private By reviewerror = By.cssSelector("[class=\"alert alert-danger alert-dismissible\"]");
     private By viewCartBtn = By.cssSelector("[class=\"btn btn-primary btn-block\"]");
     private By checkoutBtn = By.cssSelector("[class=\"btn btn-secondary btn-block\"]");
-
-
+    private By quantityText = By.xpath("(//*[@name = \"quantity\"])[2]");
 
     public SpecificProductPage(WebDriver driver) {
         super(driver);
@@ -48,13 +50,15 @@ public class SpecificProductPage extends BasePage<SpecificProductPage> {
     }
 
     @Step("Click on the Plus button to increase the quantity")
-    public void clickPlusBtn() {
+    public SpecificProductPage clickPlusBtn() {
         clickButton(driver, plusBtn);
+        return this;
     }
 
     @Step("Click on the Minus button to decrease the quantity")
-    public void clickMinusBtn() {
+    public SpecificProductPage clickMinusBtn() {
         clickButton(driver, minusBtn);
+        return this;
     }
 
     @Step("Click on the Add to Cart button")
@@ -64,8 +68,9 @@ public class SpecificProductPage extends BasePage<SpecificProductPage> {
     }
 
     @Step("Click on the Buy Now button")
-    public void clickBuyNowBtn() {
+    public SpecificProductPage clickBuyNowBtn() {
         clickButton(driver, BuyNowBtn);
+        return this;
     }
 
     @Step("Click on the Compare button")
@@ -109,11 +114,25 @@ public class SpecificProductPage extends BasePage<SpecificProductPage> {
         clickButton(driver, checkoutBtn);
         return new CheckoutPage(driver);
     }
+    @Step("enter quantity text")
+    public SpecificProductPage enterQuantityText(int q){
+        clearText(driver,quantityText);
+        enterText(driver,quantityText,String.valueOf(q));
+        return this;
+    }
+    public int getQuanity(){
+        fluentWait(driver,reviewerror,4000).until(x->driver.findElement(quantityText).isDisplayed()&&driver.findElement(quantityText).isEnabled());
 
+        return (int) Integer.parseInt(driver.findElement(quantityText).getAttribute("value"));
+    }
     @Step("Verify the visibility of the review error message")
     public void verifyReviewError() {
+        fluentWait(driver,reviewerror,4000).until(x->checkElementVisibility(driver,reviewerror));
         Assert.assertTrue(checkElementVisibility(driver, reviewerror));
     }
 
-
+    public void verifySuccessReview(){
+        fluentWait(driver,successReview,4000).until(x->checkElementVisibility(driver,successReview));
+        Assert.assertTrue(checkElementVisibility(driver,successReview));
+    }
 }

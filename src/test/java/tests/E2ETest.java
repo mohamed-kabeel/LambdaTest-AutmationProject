@@ -1,26 +1,24 @@
 package tests;
 
 import driver.DriverManger;
+import listener.SuiteListener;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 import utilities.ScreenRecorderUtils;
 import utilities.VideoUtils;
 
 import static driver.DriverManger.setDriver;
 import static utilities.FileUtilsCustom.*;
-
+@Listeners(SuiteListener.class)
 public class E2ETest {
     ScreenRecorderUtils.ScreenRecorder recorder;
     WebDriver driver;
-    @BeforeSuite
+    /*@BeforeSuite
     public void cleanAllures(){
         cleanAllureResults();
         cleanFolderContents("test-outputs/screen-records");
-    }
+    }*/
     @BeforeClass
     public void setup() throws Exception {
         setDriver("edge");

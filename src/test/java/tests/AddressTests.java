@@ -1,6 +1,7 @@
 package tests;
 
 import io.qameta.allure.*;
+import listener.SuiteListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -18,17 +19,18 @@ import static utilities.JsonUtils.getJsonValue;
 
 @Epic("Address Management")
 @Feature("Add New Address")
+@Listeners(SuiteListener.class)
 public class AddressTests {
     ScreenRecorderUtils.ScreenRecorder recorder;
     private final String path = "src/test/resources/billingAddress.json";
     WebDriver driver;
     AddressPage addressPage;
-    @BeforeSuite
+   /* @BeforeSuite
     public void cleanAllures(){
         cleanAllureResults();
         cleanFolderContents("test-outputs/screen-records");
 
-    }
+    }*/
     @BeforeClass
     public void setup() throws Exception {
 
@@ -43,7 +45,9 @@ public class AddressTests {
 
     @BeforeMethod
     public void navigateToAddressForm() {
+        driver.get("https://ecommerce-playground.lambdatest.io/");
         addressPage
+                .clickMyAccountBtnBase()
                 .clickAddressBtn()
                 .clickNewAddress();
     }

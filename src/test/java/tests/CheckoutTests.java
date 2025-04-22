@@ -2,6 +2,7 @@ package tests;
 
 import driver.DriverManger;
 import io.qameta.allure.*;
+import listener.SuiteListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -20,18 +21,13 @@ import static utilities.JsonUtils.getJsonValue;
 
 
 @Epic("E-Commerce Checkout")
+@Listeners(SuiteListener.class)
 public class CheckoutTests {
     ScreenRecorderUtils.ScreenRecorder recorder;
     String path = "src/test/resources/billingAddress.json";
     WebDriver driver;
     CheckoutPage checkoutPage;
     LoginTest login;
-    // SoftAssert softAssert = new SoftAssert();
-    @BeforeSuite
-    public void cleanAllures(){
-        cleanAllureResults();
-        cleanFolderContents("test-outputs/screen-records");
-    }
     @BeforeClass
     public void setup() throws Exception {
         setDriver("edge");
@@ -45,6 +41,7 @@ public class CheckoutTests {
     }
     @BeforeMethod
     public void setupMethod(){
+        driver.get("https://ecommerce-playground.lambdatest.io/");
         //login.validLogin();
         navigateToCheckoutPage();
     }

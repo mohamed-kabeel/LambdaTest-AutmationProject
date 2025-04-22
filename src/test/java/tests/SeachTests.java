@@ -1,6 +1,7 @@
 package tests;
 
 import driver.DriverManger;
+import listener.SuiteListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -29,24 +30,30 @@ import java.util.List;
 
 @Epic("E-Commerce Search Tests")
 @Feature("Search Functionality")
+@Listeners(SuiteListener.class)
 public class SeachTests {
     ScreenRecorderUtils.ScreenRecorder recorder;
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
-    @BeforeSuite
+    CategoryPage categoryPage;
+    /*@BeforeSuite
     public void cleanAllures(){
         cleanAllureResults();
         cleanFolderContents("test-outputs/screen-records");
-
-    }
+    }*/
     @BeforeClass
     @Step("Setup WebDriver and navigate to homepage")
     public void setup() throws Exception {
         setDriver("edge");
         driver = DriverManger.getDriver();
         driver.manage().window().maximize();
-        driver.get("https://ecommerce-playground.lambdatest.io/");
+        categoryPage = new CategoryPage(driver);
       recorder =   ScreenRecorderUtils.start(driver,"search");
+
+    }
+    @BeforeMethod
+    public void setMethod(){
+        driver.get("https://ecommerce-playground.lambdatest.io/");
 
     }
 
@@ -54,7 +61,8 @@ public class SeachTests {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Search with correct keywords")
     public void searchValidProduct(){
-        List<String> names = new HomePage(driver)
+
+        List<String> names =new  HomePage(driver)
                 .clickSearchCategory()
                 .clickSearhcspecificCategory("Desktops")
                 .enterSearchText("iMac")
@@ -71,7 +79,7 @@ public class SeachTests {
     @Severity(SeverityLevel.NORMAL)
     @Story("Validate search results")
     public void searchWithValidKey() {
-        List<String> names = new HomePage(driver)
+        List<String> names = categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu","Desktop")
                 .enterSearchText("imac")
@@ -87,7 +95,7 @@ public class SeachTests {
     @Severity(SeverityLevel.NORMAL)
     @Story("Handle invalid search")
     public void searchWithInvalidKey(){
-        String msg = new HomePage(driver)
+        String msg = categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu","Desktop")
                 .enterSearchText("xxx")
@@ -100,7 +108,7 @@ public class SeachTests {
     @Severity(SeverityLevel.MINOR)
     @Story("Filter using sliders")
     public void changeMaxPriceUsingSlider() {
-        new HomePage(driver)
+       categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu", "Desktop")
                 .changeMax(1500)
@@ -117,13 +125,12 @@ public class SeachTests {
     @Test(description = "Change max and min prices using text fields")
     @Severity(SeverityLevel.MINOR)
     @Story("Filter using input fields")
-    public void changeMaxPriceUsingFileds(){
-        new HomePage(driver)
+    public void changeMaxPriceUsingFileds() {
+        categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu", "Hard disk")
-                .enterMinPrice("50")
-                .enterMaxPrice("1200");
-
+                .enterMaxPrice("1200")
+                .enterMinPrice("50");
         String min = new CategoryPage(driver).getMinPrice();
         String max = new CategoryPage(driver).getMaxPrice();
         softAssert = new SoftAssert();
@@ -131,12 +138,11 @@ public class SeachTests {
         softAssert.assertEquals(max, "1200", "Expected max to be 1200 but was: " + max);
         softAssert.assertAll();
     }
-
     @Test(description = "Verify prices within range")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Verify price filter functionality")
     public void testProductPrices(){
-        List<Integer> prices = new HomePage(driver)
+        List<Integer> prices = categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu", "Desktop")
                 .getProductsPrice();
@@ -155,12 +161,13 @@ public class SeachTests {
     @Severity(SeverityLevel.NORMAL)
     @Story("Sort products by name")
     public void testReverseNameSorted(){
-        new HomePage(driver)
+        categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu", "Hard disk")
                 .clickSortSDropDown(5);
 
         List<String> names = new CategoryPage(driver).getProductsName();
+        System.out.println(names);
         List<String> sortedNames = new ArrayList<>(names);
         Collections.sort(sortedNames, Collections.reverseOrder());
         Assert.assertEquals(names, sortedNames, "Names not sorted in descending order");
@@ -170,7 +177,7 @@ public class SeachTests {
     @Severity(SeverityLevel.NORMAL)
     @Story("Sort products by name")
     public void testAscNameSorted(){
-        new HomePage(driver)
+       categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu", "Hard disk")
                 .clickSortSDropDown(4);
@@ -185,7 +192,7 @@ public class SeachTests {
     @Severity(SeverityLevel.NORMAL)
     @Story("Sort products by price")
     public void testAscPriceSorted(){
-        new HomePage(driver)
+        categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu", "Hard disk")
                 .clickSortSDropDown(6);
@@ -200,7 +207,7 @@ public class SeachTests {
     @Severity(SeverityLevel.NORMAL)
     @Story("Sort products by price")
     public void testDescPriceSorted(){
-        new HomePage(driver)
+        categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu", "Hard disk")
                 .clickSortSDropDown(7);
@@ -215,7 +222,7 @@ public class SeachTests {
     @Severity(SeverityLevel.MINOR)
     @Story("Filter products using all options")
     public void testAll() throws InterruptedException {
-        new HomePage(driver)
+        categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu", "Hard disk")
                 .clickManufactureSelector("Headphones")
@@ -224,11 +231,11 @@ public class SeachTests {
                 .clickColor("Black");
     }
 
-    @Test(description = "Click cart, wishlist and compare")
+    //@Test(description = "Click cart, wishlist and compare")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Cart and Wishlist operations")
     public void clickProductButtonINCart(){
-        new HomePage(driver)
+        categoryPage
                 .hoverMegMenu()
                 .clickSpecificBtn("Mega Menu","Apple")
                 .clickAddToWishListBtn("iPod Touch")

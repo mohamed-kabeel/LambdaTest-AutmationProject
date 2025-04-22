@@ -1,6 +1,7 @@
 package tests;
 
 import io.qameta.allure.*;
+import listener.SuiteListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -16,24 +17,23 @@ import static utilities.JsonUtils.getJsonValue;
 
 @Epic("Authentication")
 @Feature("Login Feature")
+@Listeners(SuiteListener.class)
 public class LoginTest {
     String path = "src/test/resources/login.json";
     LoginPage login = login = new LoginPage(getDriver());
     WebDriver driver;
-    @BeforeSuite
-    public void cleanAllures(){
-        cleanAllureResults();
-        cleanFolderContents("test-outputs/screen-records");
-    }
-
-    @BeforeMethod
-    public void setup() throws Exception {
+    @BeforeClass
+    public void setup(){
         setDriver("edge");
         driver = getDriver();
         driver.manage().window().maximize();
+        login = new LoginPage(driver);
+
+    }
+    @BeforeMethod
+    public void setup_method() throws Exception {
         driver.get("https://ecommerce-playground.lambdatest.io/");
         //ScreenRecorderUtils.startRecording("login");
-        login = new LoginPage(driver);
     }
 
     @Test(priority = 1)
@@ -104,8 +104,8 @@ public class LoginTest {
     @AfterMethod
     public void closeDriver() throws Exception {
         //ScreenRecorderUtils.stopRecording("login");
-
-        driver.close();
+        driver.manage().deleteAllCookies();
+        //driver.close();
     }
 }
 

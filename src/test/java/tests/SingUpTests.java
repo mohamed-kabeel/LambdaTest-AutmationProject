@@ -3,6 +3,7 @@ import com.github.javafaker.Faker;
 import driver.DriverManger;
 import io.qameta.allure.*;
 import io.qameta.allure.internal.shadowed.jackson.databind.ser.Serializers;
+import listener.SuiteListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -25,23 +26,26 @@ import pages.SingUpPage;
 
 import static driver.DriverManger.*;
 
-
+@Listeners(SuiteListener.class)
 public class SingUpTests {
 
     String path = "src/test/resources/signUp.json";
     //SoftAssert softAssert = new SoftAssert();
     WebDriver driver;
-    @BeforeSuite
+    /*@BeforeSuite
     public void cleanAllures(){
         cleanAllureResults();
         cleanFolderContents("test-outputs/screen-records");
 
-    }
-    @BeforeMethod
-    public void setup() {
+    }*/
+    @BeforeClass
+    public void setup(){
         setDriver("edge");
         driver = getDriver();
         driver.manage().window().maximize();
+    }
+    @BeforeMethod
+    public void setupMethod() {
         driver.get("https://ecommerce-playground.lambdatest.io/");
     }
 
@@ -66,6 +70,10 @@ public class SingUpTests {
         fillData(dataKey);
         Assert.assertNotEquals(driver.getCurrentUrl(),
                 "https://ecommerce-playground.lambdatest.io/index.php?route=account/success");
+    }
+    @AfterMethod
+    public void quitMethod() {
+        driver.manage().deleteAllCookies();
     }
     @DataProvider(name = "validSignUpData")
     public Object[][] validData() {
@@ -102,10 +110,10 @@ public class SingUpTests {
         softAssert.assertAll();
     }
 
-    @AfterMethod
+   /* @AfterMethod
     public void tearDown() {
         getDriver().close();
 
-    }
+    }*/
 }
 

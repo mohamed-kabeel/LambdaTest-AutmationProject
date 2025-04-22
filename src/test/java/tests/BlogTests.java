@@ -2,6 +2,7 @@ package tests;
 
 import com.github.javafaker.Faker;
 import io.qameta.allure.*;
+import listener.SuiteListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
@@ -20,17 +21,18 @@ import static utilities.JsonUtils.updateJsonValue;
 
 @Epic("Blog Comments")
 @Feature("Submit Comments to Blog Posts")
+@Listeners(SuiteListener.class)
 public class BlogTests {
     ScreenRecorderUtils.ScreenRecorder recorder;
     private final String path = "src/test/resources/blogComment.json";
     WebDriver driver;
     SpecificBlogPage specificBlogPage;
-    @BeforeSuite
+    /*@BeforeSuite
     public void cleanAllures(){
         cleanAllureResults();
         cleanFolderContents("test-outputs/screen-records");
 
-    }
+    }*/
     @BeforeClass
     public void setUpTest() throws Exception {
         setDriver("edge");
@@ -44,6 +46,7 @@ public class BlogTests {
 
     @BeforeMethod
     public void navigateToBlog() {
+        driver.get("https://ecommerce-playground.lambdatest.io/");
         specificBlogPage.clickBlogBtn();
     }
 

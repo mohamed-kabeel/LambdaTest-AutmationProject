@@ -1,6 +1,7 @@
 package tests;
 
 import driver.DriverManger;
+import listener.SuiteListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -10,16 +11,16 @@ import utilities.VideoUtils;
 
 import static driver.DriverManger.setDriver;
 import static utilities.FileUtilsCustom.*;
-
+@Listeners(SuiteListener.class)
 public class HomePageTests {
     HomePage homePage;
     ScreenRecorderUtils.ScreenRecorder recorder;
     WebDriver driver;
-    @BeforeSuite
+    /*@BeforeSuite
     public void cleanAllures(){
         cleanAllureResults();
         cleanFolderContents("test-outputs/screen-records");
-    }
+    }*/
     @BeforeClass
     public void setup() throws Exception {
         setDriver("edge");
@@ -28,6 +29,11 @@ public class HomePageTests {
         driver.get("https://ecommerce-playground.lambdatest.io/");//url
       recorder =   ScreenRecorderUtils.start(driver,"homepage");
       homePage = new HomePage(driver);
+    }
+    @BeforeMethod
+    public void setupMethod(){
+        driver.get("https://ecommerce-playground.lambdatest.io/");
+
     }
     @Test
     public void testCollectionAddToCart(){

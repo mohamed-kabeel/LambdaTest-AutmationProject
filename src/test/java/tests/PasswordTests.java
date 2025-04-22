@@ -1,5 +1,6 @@
 package tests;
 
+import listener.SuiteListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.devtools.v130.fedcm.model.Account;
 import org.testng.annotations.*;
@@ -13,18 +14,19 @@ import static driver.DriverManger.setDriver;
 import static utilities.FileUtilsCustom.*;
 import static utilities.JsonUtils.getJsonValue;
 
+@Listeners(SuiteListener.class)
 public class PasswordTests {
     ScreenRecorderUtils.ScreenRecorder recorder;
 
     String path = "src/test/resources/password.json";
     WebDriver driver;
     PasswordPage passwordPage ;
-    @BeforeSuite
+    /*@BeforeSuite
     public void cleanAllures(){
         cleanAllureResults();
         cleanFolderContents("test-outputs/screen-records");
 
-    }
+    }*/
     @BeforeClass
     public void setup() throws Exception {
         setDriver("edge");
@@ -39,7 +41,10 @@ public class PasswordTests {
 
     @BeforeMethod
     public void setupMethod() {
-      passwordPage.clickPasswrdBtn();
+        driver.get("https://ecommerce-playground.lambdatest.io/");
+        passwordPage.clickMyAccountBtnBase();
+        passwordPage
+                .clickPasswrdBtn();
     }
 
     @Test
