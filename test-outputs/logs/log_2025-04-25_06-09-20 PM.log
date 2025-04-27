@@ -1,0 +1,90 @@
+[INFO] 25-04-2025 18:09:20 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 25-04-2025 18:09:25 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetup_methodpassed
+[INFO] 25-04-2025 18:09:41 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestValidLoginpassed
+[INFO] 25-04-2025 18:09:41 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasedeleteCookiespassed
+[INFO] 25-04-2025 18:09:42 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetup_methodpassed
+[INFO] 25-04-2025 18:09:49 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseinvalidLoginEmailpassed
+[INFO] 25-04-2025 18:09:49 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasedeleteCookiespassed
+[INFO] 25-04-2025 18:09:50 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetup_methodpassed
+[INFO] 25-04-2025 18:10:00 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseinvalidLoginPasswordpassed
+[INFO] 25-04-2025 18:10:00 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasedeleteCookiespassed
+[INFO] 25-04-2025 18:10:04 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetup_methodpassed
+[INFO] 25-04-2025 18:10:16 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestLogoutpassed
+[INFO] 25-04-2025 18:10:16 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasedeleteCookiespassed
+[INFO] 25-04-2025 18:10:20 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseendClasspassed
+[INFO] 25-04-2025 18:10:24 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 25-04-2025 18:10:31 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:10:52 [main] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: false
+[INFO] 25-04-2025 18:10:52 [main] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: false
+[INFO] 25-04-2025 18:10:52 [main] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: false
+[INFO] 25-04-2025 18:10:52 [main] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: false
+[INFO] 25-04-2025 18:10:53 [main] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: false
+[INFO] 25-04-2025 18:10:53 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCaseinvalidSignUpTestfailed
+[INFO] 25-04-2025 18:10:53 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 25-04-2025 18:10:54 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:11:05 [main] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: false
+[INFO] 25-04-2025 18:11:05 [main] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: false
+[INFO] 25-04-2025 18:11:05 [main] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: false
+[INFO] 25-04-2025 18:11:05 [main] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: false
+[INFO] 25-04-2025 18:11:06 [main] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: false
+[INFO] 25-04-2025 18:11:06 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCaseinvalidSignUpTestfailed
+[INFO] 25-04-2025 18:11:06 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 25-04-2025 18:11:07 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:11:18 [main] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: false
+[INFO] 25-04-2025 18:11:18 [main] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: false
+[INFO] 25-04-2025 18:11:18 [main] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: false
+[INFO] 25-04-2025 18:11:18 [main] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: false
+[INFO] 25-04-2025 18:11:19 [main] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: false
+[INFO] 25-04-2025 18:11:19 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCaseinvalidSignUpTestfailed
+[INFO] 25-04-2025 18:11:19 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 25-04-2025 18:11:20 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:11:31 [main] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: true
+[INFO] 25-04-2025 18:11:31 [main] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: true
+[INFO] 25-04-2025 18:11:31 [main] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: true
+[INFO] 25-04-2025 18:11:31 [main] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: true
+[INFO] 25-04-2025 18:11:31 [main] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: true
+[INFO] 25-04-2025 18:11:31 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseinvalidSignUpTestpassed
+[INFO] 25-04-2025 18:11:31 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 25-04-2025 18:11:32 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:11:44 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesignUpWithExistingEmailpassed
+[INFO] 25-04-2025 18:11:44 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 25-04-2025 18:11:46 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:11:59 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesignUpWithExistingEmailpassed
+[INFO] 25-04-2025 18:11:59 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 25-04-2025 18:12:00 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:12:13 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasevalidSignUpTestpassed
+[INFO] 25-04-2025 18:12:13 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 25-04-2025 18:12:14 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:12:24 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasevalidSignUpTestpassed
+[INFO] 25-04-2025 18:12:25 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 25-04-2025 18:12:30 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseendClasspassed
+[INFO] 25-04-2025 18:12:49 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 25-04-2025 18:12:58 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToAddressFormpassed
+[INFO] 25-04-2025 18:13:08 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddressFormpassed
+[INFO] 25-04-2025 18:13:14 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToAddressFormpassed
+[INFO] 25-04-2025 18:13:21 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddressFormpassed
+[INFO] 25-04-2025 18:13:28 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToAddressFormpassed
+[INFO] 25-04-2025 18:13:35 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddressFormpassed
+[INFO] 25-04-2025 18:13:40 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToAddressFormpassed
+[INFO] 25-04-2025 18:13:49 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddressFormpassed
+[INFO] 25-04-2025 18:13:53 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseexitClasspassed
+[INFO] 25-04-2025 18:14:02 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetUpTestpassed
+[INFO] 25-04-2025 18:14:07 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToBlogpassed
+[INFO] 25-04-2025 18:14:15 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestBlogCommentpassed
+[INFO] 25-04-2025 18:14:18 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToBlogpassed
+[INFO] 25-04-2025 18:14:24 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestBlogCommentpassed
+[INFO] 25-04-2025 18:14:26 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToBlogpassed
+[INFO] 25-04-2025 18:14:35 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestBlogCommentpassed
+[INFO] 25-04-2025 18:14:38 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToBlogpassed
+[INFO] 25-04-2025 18:14:44 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestBlogCommentpassed
+[INFO] 25-04-2025 18:14:48 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseexitClasspassed
+[INFO] 25-04-2025 18:15:08 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 25-04-2025 18:15:35 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:15:50 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasechangeQuantityefailed
+[INFO] 25-04-2025 18:16:00 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:16:20 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasecheckoutWithAnothorInValid1Addressfailed
+[INFO] 25-04-2025 18:16:30 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:16:50 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasecheckoutWithAnothorInValid2Addressfailed
+[INFO] 25-04-2025 18:17:06 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 25-04-2025 18:17:26 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasecheckoutWithAnothorValid1Addressfailed
+[INFO] 25-04-2025 18:17:38 [main] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed

@@ -116,9 +116,6 @@ public class CheckoutTests {
         driver.navigate().refresh();
         Assert.assertNotEquals(driver.getCurrentUrl(), "https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/checkout/confirm");
     }
-
-
-
     @Feature("Cart Quantity")
     @Story("User changes quantity in cart")
     @Severity(SeverityLevel.MINOR)

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Ecommerce Suite" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="listener.SuiteListener"/>
+        <listener class-name="listener.IInvokedMethodListener"/>
+        <listener class-name="listener.TestListener"/>
+
+    </listeners>
+        <test name = "1">
+            <classes>
+                <class name="tests.LoginTest" />
+                <class name="tests.SingUpTests" />
+                <class name="tests.AddressTests" />
+                <class name="tests.BlogTests" />
+                <class name="tests.CheckoutTests" />
+
+            </classes>
+        </test>
+        <test name = "2">
+            <classes>
+                <class name="tests.PasswordTests" />
+                <class name="tests.ShoppingCartTests" />
+                <class name="tests.HomePageTests" />
+                <class name="tests.SeachTests" />
+                <class name = "tests.ProductTests"/>
+                <class name="tests.WishlistTests" />
+            </classes>
+        </test>
+</suite>

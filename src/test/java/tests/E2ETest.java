@@ -14,11 +14,6 @@ import static utilities.FileUtilsCustom.*;
 public class E2ETest {
     ScreenRecorderUtils.ScreenRecorder recorder;
     WebDriver driver;
-    /*@BeforeSuite
-    public void cleanAllures(){
-        cleanAllureResults();
-        cleanFolderContents("test-outputs/screen-records");
-    }*/
     @BeforeClass
     public void setup() throws Exception {
         setDriver("edge");

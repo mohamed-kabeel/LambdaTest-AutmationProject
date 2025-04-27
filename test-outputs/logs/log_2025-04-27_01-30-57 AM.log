@@ -1,0 +1,3 @@
+[INFO] 27-04-2025 01:30:57 [TestNG-test-Test Group 1-3] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 01:31:04 [TestNG-test-Test Group 1-3] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetup_methodpassed
+[INFO] 27-04-2025 01:31:05 [TestNG-test-Test Group 1-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed

@@ -27,12 +27,6 @@ public class BlogTests {
     private final String path = "src/test/resources/blogComment.json";
     WebDriver driver;
     SpecificBlogPage specificBlogPage;
-    /*@BeforeSuite
-    public void cleanAllures(){
-        cleanAllureResults();
-        cleanFolderContents("test-outputs/screen-records");
-
-    }*/
     @BeforeClass
     public void setUpTest() throws Exception {
         setDriver("edge");
@@ -43,7 +37,6 @@ public class BlogTests {
         recorder = ScreenRecorderUtils.start(driver,"blog");
 
     }
-
     @BeforeMethod
     public void navigateToBlog() {
         driver.get("https://ecommerce-playground.lambdatest.io/");

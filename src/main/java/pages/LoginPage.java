@@ -2,10 +2,14 @@ package pages;
 
 import io.qameta.allure.Step;
 import io.qameta.allure.testng.AllureTestNg;
+import org.apache.commons.lang3.exception.ExceptionContext;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
+
+import java.time.Duration;
 
 import static utilities.ElementActions.clickButton;
 import static utilities.ElementActions.enterText;
@@ -53,7 +57,8 @@ public class LoginPage extends AccountBase<LoginPage> {
     }
 
 
-    public void verifyLoginError(){
+    public void verifyLoginError() throws InterruptedException {
+        fluentWait(driver,loginError,5000).until(ExpectedConditions.elementToBeClickable(loginError));
         Assert.assertTrue(checkElementVisibility(driver,loginError),"login error should be appear");
     }
 }

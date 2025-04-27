@@ -14,7 +14,6 @@
             <class name="tests.LoginTest" />
         </classes>
     </test>
-
     <test name="Test Group 2" parallel="classes" thread-count="5">
         <classes>
             <class name="tests.PasswordTests" />

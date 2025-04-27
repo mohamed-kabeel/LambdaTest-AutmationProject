@@ -3,10 +3,13 @@ package pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
 import static utilities.ElementActions.*;
 import static utilities.ElementUtils.checkElementVisibility;
+import static utilities.WaitUtils.fluentWait;
+
 public class PasswordPage extends AccountBase {
     private By password = By.id("input-password");
     private By confirmPassword = By.id("input-confirm");
@@ -41,6 +44,7 @@ public class PasswordPage extends AccountBase {
     
     @Step("Verify password error message is displayed")
     public void verifyPasswordError(){
+        fluentWait(driver,passwordError,5000).until(ExpectedConditions.elementToBeClickable(passwordError));
         Assert.assertTrue(checkElementVisibility(driver,passwordError));
     }
     

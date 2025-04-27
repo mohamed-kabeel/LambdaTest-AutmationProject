@@ -3,6 +3,7 @@ package pages;
 import com.github.javafaker.Cat;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -323,6 +324,7 @@ public class CategoryPage extends BasePage<CategoryPage> {
     
         @Step("Getting the names of all products")
         public List<String> getProductsName() {
+            driver.navigate().refresh();
             List<WebElement> list = findElements(driver,name);
             List<String> names = new ArrayList<>();
     

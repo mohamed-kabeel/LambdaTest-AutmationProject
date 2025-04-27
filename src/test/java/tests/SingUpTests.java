@@ -13,8 +13,7 @@ import java.io.FileNotFoundException;
 import java.sql.Driver;
 
 import static pages.BasePage.softAssert;
-import static utilities.FileUtilsCustom.cleanAllureResults;
-import static utilities.FileUtilsCustom.cleanFolderContents;
+import static utilities.FileUtilsCustom.*;
 import static utilities.JsonUtils.getJsonValue;
 import static utilities.JsonUtils.updateJsonValue;
 
@@ -23,6 +22,8 @@ import pages.BasePage;
 import pages.LoginPage;
 import pages.SingUpPage;
 import pages.SingUpPage;
+import utilities.ScreenRecorderUtils;
+import utilities.VideoUtils;
 
 import static driver.DriverManger.*;
 
@@ -32,6 +33,8 @@ public class SingUpTests {
     String path = "src/test/resources/signUp.json";
     //SoftAssert softAssert = new SoftAssert();
     WebDriver driver;
+    ScreenRecorderUtils.ScreenRecorder recorder;
+
     /*@BeforeSuite
     public void cleanAllures(){
         cleanAllureResults();
@@ -43,6 +46,8 @@ public class SingUpTests {
         setDriver("edge");
         driver = getDriver();
         driver.manage().window().maximize();
+        recorder=  ScreenRecorderUtils.start(driver,"signup");
+
     }
     @BeforeMethod
     public void setupMethod() {
@@ -109,11 +114,16 @@ public class SingUpTests {
                 .verifyTelphoneError();
         softAssert.assertAll();
     }
-
    /* @AfterMethod
     public void tearDown() {
         getDriver().close();
-
     }*/
+    @AfterClass
+    public void endClass(){
+        ScreenRecorderUtils.stop(recorder);
+        VideoUtils.convertImagesToVideo("signup");
+        deleteFolderCompletely("test-outputs/screen-records/signup");
+        driver.close();
+    }
 }
 

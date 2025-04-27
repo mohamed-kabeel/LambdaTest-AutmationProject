@@ -1,0 +1,152 @@
+[INFO] 27-04-2025 16:42:06 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 16:42:07 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:42:27 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 16:42:29 [TestNG-tests-1] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: false
+[INFO] 27-04-2025 16:42:29 [TestNG-tests-1] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: false
+[INFO] 27-04-2025 16:42:29 [TestNG-tests-1] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: false
+[INFO] 27-04-2025 16:42:29 [TestNG-tests-1] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: false
+[INFO] 27-04-2025 16:42:29 [TestNG-tests-1] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: false
+[INFO] 27-04-2025 16:42:29 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCaseinvalidSignUpTestfailed
+[INFO] 27-04-2025 16:42:29 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 27-04-2025 16:42:29 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:42:35 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:42:38 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestInvalidData1passed
+[INFO] 27-04-2025 16:42:44 [TestNG-tests-1] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: false
+[INFO] 27-04-2025 16:42:44 [TestNG-tests-1] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: false
+[INFO] 27-04-2025 16:42:44 [TestNG-tests-1] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: false
+[INFO] 27-04-2025 16:42:44 [TestNG-tests-1] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: false
+[INFO] 27-04-2025 16:42:44 [TestNG-tests-1] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: false
+[INFO] 27-04-2025 16:42:44 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCaseinvalidSignUpTestfailed
+[INFO] 27-04-2025 16:42:44 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 27-04-2025 16:42:45 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:42:46 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:42:51 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestInvalidData2passed
+[INFO] 27-04-2025 16:42:56 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:43:00 [TestNG-tests-1] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: false
+[INFO] 27-04-2025 16:43:00 [TestNG-tests-1] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: false
+[INFO] 27-04-2025 16:43:00 [TestNG-tests-1] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: false
+[INFO] 27-04-2025 16:43:00 [TestNG-tests-1] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: false
+[INFO] 27-04-2025 16:43:00 [TestNG-tests-1] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: false
+[INFO] 27-04-2025 16:43:00 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCaseinvalidSignUpTestfailed
+[INFO] 27-04-2025 16:43:00 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 27-04-2025 16:43:01 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestInvalidData3passed
+[INFO] 27-04-2025 16:43:01 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:43:09 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:43:12 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestInvalidData4passed
+[INFO] 27-04-2025 16:43:15 [TestNG-tests-1] [pages.SingUpPage.verifyEmailError(SingUpPage.java:159)] - Verifying Email error visibility: true
+[INFO] 27-04-2025 16:43:15 [TestNG-tests-1] [pages.SingUpPage.verifyPasswordError(SingUpPage.java:173)] - Verifying Password error visibility: true
+[INFO] 27-04-2025 16:43:15 [TestNG-tests-1] [pages.SingUpPage.verifyFirstNameError(SingUpPage.java:145)] - Verifying First Name error visibility: true
+[INFO] 27-04-2025 16:43:15 [TestNG-tests-1] [pages.SingUpPage.verifyLastNameError(SingUpPage.java:152)] - Verifying Last Name error visibility: true
+[INFO] 27-04-2025 16:43:15 [TestNG-tests-1] [pages.SingUpPage.verifyTelphoneError(SingUpPage.java:166)] - Verifying Telephone error visibility: true
+[INFO] 27-04-2025 16:43:15 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseinvalidSignUpTestpassed
+[INFO] 27-04-2025 16:43:15 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 27-04-2025 16:43:17 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:43:17 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:43:21 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestValidData1passed
+[INFO] 27-04-2025 16:43:30 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseexitClasspassed
+[INFO] 27-04-2025 16:43:31 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesignUpWithExistingEmailpassed
+[INFO] 27-04-2025 16:43:31 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 27-04-2025 16:43:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:43:37 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 16:43:39 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:43:44 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesignUpWithExistingEmailpassed
+[INFO] 27-04-2025 16:43:44 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 27-04-2025 16:43:46 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:43:46 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestCollectionAddToCartpassed
+[INFO] 27-04-2025 16:43:47 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:44:00 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestNavigatToBlogPagepassed
+[INFO] 27-04-2025 16:44:01 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:44:02 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasevalidSignUpTestpassed
+[INFO] 27-04-2025 16:44:02 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 27-04-2025 16:44:04 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:44:13 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestNavigateToBlogAuthorpassed
+[INFO] 27-04-2025 16:44:15 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:44:20 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasevalidSignUpTestpassed
+[INFO] 27-04-2025 16:44:20 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasequitMethodpassed
+[INFO] 27-04-2025 16:44:28 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseendClasspassed
+[INFO] 27-04-2025 16:44:39 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasetestTopProductAddToCartfailed
+[INFO] 27-04-2025 16:44:44 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseexitClasspassed
+[INFO] 27-04-2025 16:44:48 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 16:44:57 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:44:59 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 16:45:16 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasechangeMaxPriceUsingFiledsfailed
+[INFO] 27-04-2025 16:45:16 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToAddressFormpassed
+[INFO] 27-04-2025 16:45:17 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:45:27 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasechangeMaxPriceUsingSliderpassed
+[INFO] 27-04-2025 16:45:28 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:45:31 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddressFormpassed
+[INFO] 27-04-2025 16:45:37 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToAddressFormpassed
+[INFO] 27-04-2025 16:45:38 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesearchValidProductpassed
+[INFO] 27-04-2025 16:45:39 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:45:46 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesearchWithInvalidKeypassed
+[INFO] 27-04-2025 16:45:48 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddressFormpassed
+[INFO] 27-04-2025 16:45:48 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:45:52 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasesearchWithValidKeyfailed
+[INFO] 27-04-2025 16:45:55 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:45:56 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToAddressFormpassed
+[INFO] 27-04-2025 16:46:08 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAllpassed
+[INFO] 27-04-2025 16:46:10 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddressFormpassed
+[INFO] 27-04-2025 16:46:10 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:46:18 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAscNameSortedpassed
+[INFO] 27-04-2025 16:46:19 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:46:20 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToAddressFormpassed
+[INFO] 27-04-2025 16:46:25 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAscPriceSortedpassed
+[INFO] 27-04-2025 16:46:28 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:46:29 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasetestAddressFormfailed
+[INFO] 27-04-2025 16:46:35 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestDescPriceSortedpassed
+[INFO] 27-04-2025 16:46:35 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseexitClasspassed
+[INFO] 27-04-2025 16:46:36 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:46:40 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestProductPricespassed
+[INFO] 27-04-2025 16:46:42 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetMethodpassed
+[INFO] 27-04-2025 16:46:46 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetUpTestpassed
+[INFO] 27-04-2025 16:46:47 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestReverseNameSortedpassed
+[INFO] 27-04-2025 16:46:52 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseexitClasspassed
+[INFO] 27-04-2025 16:46:55 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 16:46:56 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToBlogpassed
+[INFO] 27-04-2025 16:47:02 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:47:08 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestBlogCommentpassed
+[INFO] 27-04-2025 16:47:11 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToBlogpassed
+[INFO] 27-04-2025 16:47:19 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestBlogCommentpassed
+[INFO] 27-04-2025 16:47:24 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToBlogpassed
+[INFO] 27-04-2025 16:47:35 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasechangQuantitypassed
+[INFO] 27-04-2025 16:47:36 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:47:42 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestBlogCommentpassed
+[INFO] 27-04-2025 16:47:45 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasetestAddToCartFromSpecificPagefailed
+[INFO] 27-04-2025 16:47:46 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasenavigateToBlogpassed
+[INFO] 27-04-2025 16:47:46 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:47:54 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestBlogCommentpassed
+[INFO] 27-04-2025 16:47:59 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddingReviewpassed
+[INFO] 27-04-2025 16:47:59 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseexitClasspassed
+[INFO] 27-04-2025 16:48:00 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:48:18 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddingReviewpassed
+[INFO] 27-04-2025 16:48:19 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:48:26 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 16:48:37 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddingReviewpassed
+[INFO] 27-04-2025 16:48:39 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:48:50 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestAddingReviewpassed
+[INFO] 27-04-2025 16:48:51 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:48:51 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:48:52 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasechangeQuantityepassed
+[INFO] 27-04-2025 16:49:08 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:49:10 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasetestcompareFromSpecificPagepassed
+[INFO] 27-04-2025 16:49:16 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseexitClasspassed
+[INFO] 27-04-2025 16:49:28 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasecheckoutWithAnothorInValid1Addresspassed
+[INFO] 27-04-2025 16:49:49 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:49:50 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 16:50:01 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasecheckoutWithAnothorInValid2Addresspassed
+[INFO] 27-04-2025 16:50:10 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:50:12 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseremoveElementpassed
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:17)] - TestCasesetupMethodfailed
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:23)] - TestCasecheckoutWithAnothorValid1Addressskip
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:23)] - TestCasesetupMethodskip
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:23)] - TestCasecheckoutWithAnothorValid2Addressskip
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:23)] - TestCasesetupMethodskip
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:23)] - TestCasecheckoutWithSameLoginDataskip
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:23)] - TestCasesetupMethodskip
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:23)] - TestCaseremoveElementskip
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:23)] - TestCasesetupMethodskip
+[INFO] 27-04-2025 16:50:32 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:23)] - TestCasetestProductPricesskip
+[INFO] 27-04-2025 16:50:38 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed
+[INFO] 27-04-2025 16:50:40 [TestNG-tests-2] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetupMethodpassed
+[INFO] 27-04-2025 16:50:41 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCaseexitClasspassed
+[INFO] 27-04-2025 16:50:44 [TestNG-tests-1] [listener.IInvokedMethodListener.afterInvocation(IInvokedMethodListener.java:20)] - TestCasesetuppassed

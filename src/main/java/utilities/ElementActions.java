@@ -26,18 +26,20 @@ public class ElementActions {
 
     public static void enterTextAndEnter(WebDriver driver, By locator, String data) {
 
-        fluentWait(driver, locator, 15000)
+      /*  fluentWait(driver, locator, 15000)
                 .until(x -> (ElementUtils.checkElementVisibility(driver, locator))&&driver.findElement(locator).isDisplayed()&&driver.findElement(locator).isEnabled());
-        fluentWait(driver,locator,15000).until(ExpectedConditions.elementToBeClickable(locator));
+        fluentWait(driver,locator,15000).until(ExpectedConditions.elementToBeClickable(locator));*/
         hover(driver,locator);
       // System.out.println("data entered");
-        fluentWait(driver,locator,15000).until(ExpectedConditions.elementToBeClickable(locator));
-        new Actions(driver)
+       WebElement element =  fluentWait(driver,locator,15000).until(ExpectedConditions.elementToBeClickable(locator));
+        element.sendKeys(data);
+       element.sendKeys(Keys.ENTER);
+       /* new Actions(driver)
                 .sendKeys(driver.findElement(locator), data)
                 .keyDown(Keys.ENTER)
                 .keyUp(Keys.ENTER)
                 .build()
-                .perform();
+                .perform();*/
     }
 
     public static void selectDropListElement(WebDriver driver, By locator, int index) {
@@ -111,7 +113,7 @@ public class ElementActions {
 
     public static List<WebElement> findElements(WebDriver driver, By locator) {
         fluentWait(driver, locator, 15000)
-                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+                .until(ExpectedConditions.elementToBeClickable(locator));
         System.out.println("yes");
         return driver.findElements(locator);
     }

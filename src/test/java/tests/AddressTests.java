@@ -25,12 +25,7 @@ public class AddressTests {
     private final String path = "src/test/resources/billingAddress.json";
     WebDriver driver;
     AddressPage addressPage;
-   /* @BeforeSuite
-    public void cleanAllures(){
-        cleanAllureResults();
-        cleanFolderContents("test-outputs/screen-records");
 
-    }*/
     @BeforeClass
     public void setup() throws Exception {
 

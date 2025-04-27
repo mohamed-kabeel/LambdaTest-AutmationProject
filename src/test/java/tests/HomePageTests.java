@@ -97,7 +97,7 @@ public class HomePageTests {
         ScreenRecorderUtils.stop(recorder);
         VideoUtils.convertImagesToVideo("homepage");
         deleteFolderCompletely("test-outputs/screen-records/homepage");
-        //driver.close();
+        driver.close();
     }
 
 }

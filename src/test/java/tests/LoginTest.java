@@ -6,12 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.LoginPage;
+import utilities.ScreenRecorderUtils;
+import utilities.VideoUtils;
 
 import static driver.DriverManger.getDriver;
 import static driver.DriverManger.setDriver;
 //import static pages.BasePage.softAssert;
-import static utilities.FileUtilsCustom.cleanAllureResults;
-import static utilities.FileUtilsCustom.cleanFolderContents;
+import static utilities.FileUtilsCustom.*;
 import static utilities.JsonUtils.getJsonValue;
 
 
@@ -22,11 +23,13 @@ public class LoginTest {
     String path = "src/test/resources/login.json";
     LoginPage login = login = new LoginPage(getDriver());
     WebDriver driver;
+    ScreenRecorderUtils.ScreenRecorder recorder;
     @BeforeClass
     public void setup(){
         setDriver("edge");
         driver = getDriver();
         driver.manage().window().maximize();
+        recorder=  ScreenRecorderUtils.start(driver,"login");
         login = new LoginPage(driver);
 
     }
@@ -56,7 +59,7 @@ public class LoginTest {
     @Story("Invalid Login - Email")
     @Severity(SeverityLevel.NORMAL)
     @Description("Test login with invalid email and valid password")
-    public void invalidLoginEmail() {
+    public void invalidLoginEmail() throws InterruptedException {
         fillData("invalidEmail");
         login.verifyLoginError();
     }
@@ -64,7 +67,7 @@ public class LoginTest {
     @Story("Invalid Login - Password")
     @Severity(SeverityLevel.NORMAL)
     @Description("Test login with valid email and invalid password")
-    public void invalidLoginPassword() {
+    public void invalidLoginPassword() throws InterruptedException {
         fillData("invalidPassword");
         login.verifyLoginError();
     }
@@ -102,10 +105,16 @@ public class LoginTest {
         );
     }
     @AfterMethod
-    public void closeDriver() throws Exception {
-        //ScreenRecorderUtils.stopRecording("login");
+    public void deleteCookies() throws Exception {
         driver.manage().deleteAllCookies();
-        //driver.close();
+    }
+    @AfterClass
+    public void endClass(){
+        ScreenRecorderUtils.stop(recorder);
+        VideoUtils.convertImagesToVideo("login");
+        deleteFolderCompletely("test-outputs/screen-records/login");
+        driver.close();
+
     }
 }
 
