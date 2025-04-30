@@ -20,21 +20,25 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         ExtentManager.getTest().pass("Test Passed");
+        extent.flush();
+
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         ExtentManager.getTest().fail(result.getThrowable());
-        // Add screenshot if needed
+        extent.flush();
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         ExtentManager.getTest().skip(result.getThrowable());
+        extent.flush();
     }
 
     @Override
     public void onFinish(ITestContext context) {
+        extent.flush();
         extent.flush();
     }
 }
